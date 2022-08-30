@@ -109,7 +109,7 @@ class PascalDataset(Dataset):
     def __getitem__(self, index: int):
         # Grab the Image
         image_id = self.image_ids[index]
-        print(image_id)
+        #print(image_id)
         im = cv2.cvtColor(cv2.imread(image_id), cv2.COLOR_BGR2RGB)
 
         # extract the bounding boxes
